@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijing2">
+
+    <RelativeLayout
+        android:id="@+id/header_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/spot_Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/im_skin_icon_imageload_default" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/spot_name_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_img"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"/>
+    
+    <TextView
+        android:layout_below="@id/spot_name_location"
+        android:id="@+id/spot_line"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#99ccff"/>
+    
+    <TextView 
+        android:id="@+id/spot_detail"
+        android:layout_below="@id/spot_line"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#ffffff"
+    tools:context="com.yiw.circledemo.MainActivity" >
+
+    <!-- 自定义的actionBar -->
+    <RelativeLayout
+        android:id="@+id/circle_action_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#339999"
+        >
+        <TextView 
+            android:id="@+id/circle_back"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:text="返回"/>
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:text="旅游足迹"/>
+        
+        <TextView 
+            android:id="@+id/circle_release"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:text="发表"/>
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/no_limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="您没有权限查看TA的旅游足迹(。﹏。*)"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+    
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_below="@id/circle_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- 上面的自定义的ListView组件 -->
+        <com.qipilang.lvyouplatform.view.MyListView
+            android:id="@+id/circleLv"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/im_line_color"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:listSelector="@android:color/transparent">
+        </com.qipilang.lvyouplatform.view.MyListView>
+
+        <!-- 下面的软键盘 -->
+        <LinearLayout
+            android:id="@+id/editTextBodyLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#f6f6f6"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/circleEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="说点什么..." />
+
+            <ImageView
+                android:id="@+id/sendIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:contentDescription="@null"
+                android:src="@drawable/selector_send" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

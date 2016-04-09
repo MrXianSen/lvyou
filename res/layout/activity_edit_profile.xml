@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijing2"
+    android:orientation="vertical" >
+    
+    <!-- 自定义的actionBar -->
+
+    <RelativeLayout
+        android:id="@+id/reg_action_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#339999" >
+
+        <TextView
+            android:id="@+id/edit_Info_back"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_carrot_left"
+            android:textSize="20sp" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="修改个人资料"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+   		android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1">
+    
+        <com.albery.circledemo.widgets.CircularImage
+            android:id="@+id/my_pro_pic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/default_head_pic"/>
+
+        <TextView 
+            android:id="@+id/edit_profile_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/my_pro_pic"
+            android:textColor="#339999"
+            android:text="编辑头像"
+            android:layout_gravity="center_vertical"/>
+	</RelativeLayout>
+
+    
+
+    <LinearLayout 
+    	android:layout_width="match_parent"
+   	 	android:layout_height="0dp"
+   	 	android:layout_weight="7"
+ 	  	android:orientation="vertical" >
+            <LinearLayout 
+    			android:layout_width="match_parent"
+    			android:layout_height="0dp"
+    			android:layout_weight="1"
+    			android:orientation="horizontal"
+    			android:paddingLeft="10dp"
+           		android:paddingRight="10dp" >
+    
+        		<TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#339999"
+                    android:gravity="left|center_vertical"
+                    android:text="用户名："/>
+                
+        		
+        		<EditText 
+        		    android:id="@+id/edit_nickname"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="left|center_vertical"
+                    android:text="未填写"
+                    android:textSize="14sp"/>
+        		
+
+			</LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#339999"
+                    android:gravity="left|center_vertical"
+                    android:text="性 别 ："/>
+                
+                <EditText 
+            		android:id="@+id/edit_gender"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="left|center_vertical"
+                    android:text="未填写"
+                    android:textSize="14sp"/>
+                
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#339999"
+                    android:gravity="left|center_vertical"
+                    android:text="年 龄 ："/>
+                
+                <EditText 
+            		android:id="@+id/edit_age"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="left|center_vertical"
+                    android:text="未填写"
+                    android:textSize="14sp"/>
+                
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#339999"
+                    android:gravity="left|center_vertical"
+                    android:text="生 日 ："/>
+                
+                <EditText 
+            		android:id="@+id/edit_birthday"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="left|center_vertical"
+                    android:text="20"
+                    android:textSize="14sp"/>
+                
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+                
+                <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#339999"
+                    android:gravity="left|center_vertical"
+                    android:text="学 历 ："/>
+                
+                <EditText 
+            		android:id="@+id/edit_edu"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="left|center_vertical"
+                    android:text="未填写"
+                    android:textSize="14sp"/>
+                
+            </LinearLayout>
+            
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            
+            <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#339999"
+                    android:gravity="left|center_vertical"
+                    android:text="电话号码："/>
+                
+             <EditText 
+            		android:id="@+id/edit_tel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="left|center_vertical"
+                    android:text="未填写"
+                    android:textSize="14sp"/>
+                
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            
+            <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#339999"
+                    android:gravity="left|center_vertical"
+                    android:text="电子邮箱："/>
+                
+            <EditText 
+            		android:id="@+id/edit_email"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="left|center_vertical"
+                    android:text="未填写"
+                    android:textSize="14sp"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            
+            <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#339999"
+                    android:gravity="left|center_vertical"
+                    android:text="家庭住址："/>
+                
+                <EditText 
+            		android:id="@+id/edit_addr"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="left|center_vertical"
+                    android:text="未填写"
+                    android:textSize="14sp"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            
+            <TextView 
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="#339999"
+                    android:gravity="left|center_vertical"
+                    android:text="兴趣爱好："/>
+                
+                <EditText 
+            		android:id="@+id/edit_hobby"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="left|center_vertical"
+                    android:text="未填写"
+                    android:textSize="14sp"/>
+            
+        </LinearLayout>
+        
+
+	</LinearLayout>
+
+    <LinearLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1"
+    	android:orientation="horizontal" >
+    
+        <Button 
+            android:id="@+id/edit_done"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="确定"
+            android:gravity="center"/>
+        
+        <Button 
+            android:id="@+id/edit_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="取消"
+            android:gravity="center"/>
+
+	</LinearLayout>
+
+</LinearLayout>

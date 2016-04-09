@@ -1,0 +1,44 @@
+<root>
+  <province name="四川省">
+    <city name="成都市">
+      <district name="锦里" zipcode="1" />
+      <district name="熊猫基地" zipcode="2" />
+    </city>
+    <city name="绵阳市">
+      <district name="佛爷洞" zipcode="3" />
+      <district name="药王谷" zipcode="4" />
+    </city>
+    <city name="自贡市">
+      <district name="盐业历史博物馆" zipcode="5" />
+      <district name="自贡恐龙博物馆" zipcode="6" />
+    </city>
+    <city name="攀枝花市">
+      <district name="格萨拉生态旅游区" zipcode="7" />
+      <district name="三滩国家森林公园" zipcode="8" />
+    </city>
+    <city name="泸州市">
+      <district name="黄荆老林" zipcode="9" />
+      <district name="泸州老窑旅游区" zipcode="10" />
+    </city>
+    <city name="遂宁市">
+      <district name="中国死海" zipcode="11" />
+      <district name="龙凤古镇" zipcode="12" />
+    </city>
+    <city name="乐山市">
+      <district name="乐山大佛" zipcode="13" />
+      <district name="峨眉山旅游区" zipcode="14" />
+    </city>
+    <city name="宜宾市">
+      <district name="蜀南竹海" zipcode="15" />
+      <district name="李庄古镇" zipcode="16" />
+    </city>
+    <city name="德阳市">
+      <district name="三星堆遗址" zipcode="17" />
+      <district name="九龙山" zipcode="18" />
+    </city>
+    <city name="南充市">
+      <district name="西山风景区" zipcode="19" />
+      <district name="朱德故里琳琅山景区" zipcode="20" />
+    </city>
+  </province>
+</root>

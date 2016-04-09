@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc"
+    android:alpha="0.8"
+    android:fitsSystemWindows="true" >
+
+    <com.albery.circledemo.widgets.CircularImage
+        android:id="@+id/circle_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/circle_img" />
+
+    <TextView
+        android:id="@+id/circle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/circle_img"
+        android:layout_centerHorizontal="true"
+		android:layout_alignParentBottom="true"
+		android:gravity="center"
+		android:textSize="20sp"
+		android:textColor="#ffffff"
+        android:text="驴一驴..." />
+
+</RelativeLayout>

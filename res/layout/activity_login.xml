@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijing2"
+    tools:context=".LoginActivity" >
+
+    <!-- 自定义的actionBar -->
+
+    <RelativeLayout
+        android:id="@+id/reg_action_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#339999" >
+
+        <TextView
+            android:id="@+id/login_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="登 录"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/popup_bg"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/log_account"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_edit_height"
+            android:layout_margin="@dimen/login_edit_margin"
+            android:hint="@string/str_log_userNameHint"
+            android:inputType="text"
+            android:padding="@dimen/login_edit_padding" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_view_height"
+            android:background="@color/devide_line" />
+
+        <EditText
+            android:id="@+id/log_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_edit_height"
+            android:layout_margin="@dimen/login_edit_margin"
+            android:paddingLeft="40dp"
+            android:ems="10"
+            android:hint="@string/str_log_passwordHint"
+            android:inputType="textPassword"
+            android:padding="@dimen/login_edit_padding" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/login_height"
+        android:layout_below="@id/user_info"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/log_login"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_btn"
+            android:text="@string/str_log_login"
+            android:textColor="@android:color/black" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_tab_pressed">#6633B5E5</color>
+	<color name="tab_selector_text_color">#12345678</color>
+    <color name="devide_line">#CBCED2</color>
+    
+    <color name="LawnGreen">#7CFC00</color>	
+    <color name="ForestGreen">#99ccff</color>
+    <color name="next_strp_pressed">#66cc99</color>
+    <color name="background_enter">#fff</color>
+    
+    <color name="color_8290AF">#8290AF</color>
+    <color name="color_232323">#232323</color>
+    <color name="color_aeaeae">#aeaeae</color>
+    <color name="im_social_dig_name_bg">#DDDDDD</color>
+    <color name="im_font_color_text_hint">#abb1b6</color>
+    <color name="im_line_color">#dadada</color>
+    <color name="name_selector_color">#cccccc</color>
+    <color name="transparent">#00000000</color>
+    <color name="bg_no_photo">#EEEEEE</color>
+    
+    <color name="province_line_border">#C7C7C7</color>
+    <color name="blue">#0000FF</color>
+</resources>

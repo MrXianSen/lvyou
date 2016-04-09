@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">驴么么</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- 欢迎 -->
+    <string name="title_activity_welcome">欢迎</string>
+    <string name="str_wel_login">已有账号登录</string>
+    <string name="str_wel_register">加入我们</string>
+
+    <!-- 登录 -->
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="str_log_userNmae">账 号：</string>
+    <string name="str_log_userNameHint">请输入用户名</string>
+    <string name="str_log_password">密   码：</string>
+    <string name="str_log_passwordHint">请输入密码</string>
+    <string name="str_log_login">登 录</string>
+
+    <!-- 注册 -->
+    <string name="title_activity_register">LoginActivity</string>
+    <string name="str_reg_passwordAgain">确 认：</string>
+    <string name="str_reg_passwordAgainHint">请再次输入密码</string>
+    <string name="str_reg_register">注册</string>
+    <string name="str_reg_next_step">下一步</string>
+    <string name="str_gender_male">男</string>
+    <string name="str_gender_female">女</string>
+    <string name="birthday">生 日：</string>
+    <string name="birthday_hint">您的生日</string>
+    <string name="str_notification_item_img_desc">通知图标</string>
+    <string name="secret_question">请选择密保问题</string>
+    <string name="secret_answer">请输入密保答案</string>
+    <string name="complete">完 成</string>
+
+    <!-- TEST STRINGS -->
+    <string name="str_test_title">Title</string>
+    <string name="str_test_text">您有一条新消息</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="tab_menu_main">主页</string>
+    <string name="tab_menu_friend">好友</string>
+    <string name="tab_menu_scene">景点</string>
+    <string name="tab_menu_forum">论坛</string>
+    <string name="str_forget_password">忘记密码？</string>
+    <string name="title_activity_secret_question">设置密保</string>
+    <string name="title_activity_find_password">FindPasswordActivity</string>
+    <string name="title_activity_reset_password">ResetPasswordActivity</string>
+    <string name="title_activity_circle">CircleActivity</string>
+    <string name="title_activity_friend_info">FriendInfoActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/bbs_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10sp"
+        android:text="问题......"
+        android:maxLines="3"
+        android:ellipsize="end" 
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp" >
+
+        <TextView
+            android:id="@+id/bbsQ_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="14sp"
+            android:layout_alignBaseline="@+id/bbs_nickname"
+            android:layout_alignBottom="@+id/bbs_nickname"
+            android:layout_toLeftOf="@+id/sending_date"
+            android:layout_marginRight="5sp"
+            android:text="|" />
+
+        <TextView
+            android:id="@+id/bbs_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/bbsQ_textView1"
+            android:layout_marginRight="5sp"
+            android:text="昵称"
+            android:textColor="#339999"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/sending_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:gravity="bottom"
+            android:text="发送时间"
+            android:textColor="#cccccc"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#cccccc" />
+
+</LinearLayout>

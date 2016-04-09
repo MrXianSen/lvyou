@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <com.qipilang.lvyouplatform.view.MyListView
+        android:id="@+id/bbs_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/editTextBodyLl"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/im_line_color"
+        android:dividerHeight="0sp"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="0dp"
+        android:focusable="false"
+        android:listSelector="@android:color/transparent" >
+
+    </com.qipilang.lvyouplatform.view.MyListView>
+
+    <LinearLayout
+            android:id="@+id/editTextBodyLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#f6f6f6"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <EditText
+                android:id="@+id/question_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="说点什么..." />
+            <ImageView
+                android:id="@+id/question_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:contentDescription="@null"
+                android:src="@drawable/selector_send" />
+        </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- =========================================== -->
+<!--            自定义Notification布局                               -->
+<!-- =========================================== -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <!-- Notification icon -->
+    <ImageView 
+        android:id="@+id/item_notification_img"
+        android:layout_width="@dimen/notification_img_size"
+        android:layout_height="@dimen/notification_img_size"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/str_notification_item_img_desc"
+        android:src="@drawable/ic_launcher"/>
+    
+    <TextView 
+        android:id="@+id/item_notification_title"
+        android:layout_height="@dimen/notification_title_size"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/item_notification_img"
+        style="@style/NotificationTitle"
+        android:text="@string/str_test_title"/>
+    
+    <TextView 
+        android:id="@+id/item_notification_userName"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/item_notification_img"
+        style="@style/NotificationUserName"
+        android:text="@string/str_test_title"/>
+    
+    <TextView 
+        android:id="@+id/item_notification_content"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/item_notification_userName"
+        android:layout_below="@id/item_notification_img"
+        style="@style/NotificationText"
+        android:text="@string/str_test_text"/>
+</RelativeLayout>

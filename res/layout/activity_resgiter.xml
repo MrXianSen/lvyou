@@ -1,0 +1,202 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegsiterActivity"
+    android:background="@drawable/beijing2" >
+	
+    <RelativeLayout
+        android:id="@+id/reg_action_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="#339999"
+        >
+        <TextView 
+            android:id="@+id/reg_back"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:text="返回"/>
+        
+        <TextView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp"
+            android:textColor="#ffffff"
+            android:text="注册"/>
+        
+        <TextView 
+            android:id="@+id/next_step"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:text="下一步"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@id/reg_action_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+		
+        <!-- 用户信息 -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp" >
+            
+
+            <TextView
+                android:id="@+id/str_username_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/str_log_userNmae"
+                android:textColor="#339999"
+                android:textSize="18sp" />
+			<EditText
+                android:id="@+id/reg_input_username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/str_username_hint"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentBottom="true"
+                android:hint="@string/str_log_userNameHint" />
+			
+            <TextView
+                android:id="@+id/reg_username_is_crect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" 
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp">
+            <TextView
+                android:id="@+id/str_password_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/str_log_password"
+                android:textColor="#339999"
+                android:textSize="18sp" />
+			<EditText
+                android:id="@+id/reg_input_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/str_password_hint"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentBottom="true"
+                android:inputType="textPassword"
+                android:hint="@string/str_log_passwordHint" />
+            <TextView
+                android:id="@+id/reg_password_is_crect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" 
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp">
+            <TextView
+                android:id="@+id/str_password_hint_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/str_reg_passwordAgain"
+                android:textColor="#339999"
+                android:textSize="18sp" />
+			<EditText
+                android:id="@+id/reg_input_password_confirm"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/str_password_hint_confirm"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentBottom="true"
+                android:inputType="textPassword"
+                android:hint="@string/str_reg_passwordAgainHint" />
+            <TextView
+                android:id="@+id/reg_password_is_crect_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+        
+        <!-- 出生日期 -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" 
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            >
+            <TextView
+                android:id="@+id/birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="#339999"
+                android:text="@string/birthday"
+                android:textSize="18sp" />
+			<EditText
+                android:id="@+id/text_birthday"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/birthday"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentBottom="true"
+                android:hint="@string/birthday_hint" 
+                android:inputType="date"
+                android:editable="false"/>
+        </RelativeLayout>
+        <!-- 性别 -->
+        <RadioGroup
+            android:id="@+id/gender_btn"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:gravity="center">
+            <RadioButton 
+                android:id="@+id/gender_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_gender_male"
+                android:textColor="#000000"
+                android:checked="true"
+                />
+            <RadioButton 
+                android:id="@+id/gender_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_gender_female"
+                android:textColor="#000000"
+                />
+        </RadioGroup>
+        
+    </LinearLayout>
+
+</RelativeLayout>
